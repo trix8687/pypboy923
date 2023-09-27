@@ -1,4 +1,6 @@
 # Pipboy-3000
+a fork of ColtonMcCasland's pypboy3000 
+Their readme:
  Python code recycled and forked to create a UI for a raspi TFT 3.5" using the ytech pipboy 3d model.
  
 
