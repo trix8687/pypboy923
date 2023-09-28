@@ -1,9 +1,9 @@
 import pygame
 
-PLAYERNAME = "Markuspwn"
+PLAYERNAME = "Tesla"
 PLAYERLEVEL = 10
-WIDTH = 480
-HEIGHT = 320
+WIDTH = 600
+HEIGHT = 400
 
 minSwipe = 50
 maxClick = 15
@@ -12,8 +12,8 @@ touchScale = 1
 invertPosition = False
 GPIO_AVAILABLE = True
 RADIO_PLAYING = True
-QUICKLOAD = False
-LOAD_CACHED_MAP = True
+QUICKLOAD = True
+LOAD_CACHED_MAP = False
 # Main
 
 TINTCOLOUR = pygame.Color(26, 255, 128) # Green
@@ -26,11 +26,11 @@ TINTCOLOUR = pygame.Color(26, 255, 128) # Green
 #MAP_FOCUS = (-102.3016145, 21.8841274) #Old Default?
 #MAP_FOCUS = (-118.5723894,34.3917171)#CodeNinjasValencia
 #MAP_FOCUS = (32.7157, 117.1611)
-MAP_FOCUS = (-92.1943197, 38.5653437)
+MAP_FOCUS = (-87.9063582, 43.1462029)
 
 WORLD_MAP_FOCUS = 0.07 #Needed to handle the 50k node limit from OSM
 
-LOAD_CACHED_MAP = True
+LOAD_CACHED_MAP = False
 SOUND_ENABLED = True
 
 EVENTS = {
@@ -64,10 +64,10 @@ ACTIONS = {
 #GPIO 23 pin16 reboot
 #GPIO 25 pin 22 blank screen do not use
 GPIO_ACTIONS = {
-	4: "dial_down", #GPIO 23
-	17: "dial_up", #GPIO 24
-	22: "knob_down", #GPIO 4
-	27: "knob_up", #GPIO 17
+	15: "dial_down", #GPIO 23
+	14: "dial_up", #GPIO 24
+	20: "knob_down", #GPIO 4
+	16: "knob_up", #GPIO 17
 }
 
 # LEDs
@@ -125,18 +125,14 @@ INVENTORY_OLD = [
 ]
 
 WEAPONS = [
-    "10mm Pistol",
-    "Combat Knife",
-    "Fragmentation Grenade (2)",
-    "Laser Pistol",
-    "Plasma Mine (3)"
-]
+    "Water Pistol",
+    "Lighter"
+    ]
 
 ARMOR = [
-    "Eyeglasses",
-    "Vault 111 Jumpsuit",
-    "Wedding Ring"
-]
+    "$ \blacksquare Vault 913 Jumpsuit $",
+    " $ \blacksquare Nice Leather Boots"
+    ]
 
 AID = [
     "Purified Water (3)",
@@ -145,33 +141,30 @@ AID = [
 ]
 
 MISC = [
-    "Pencil",
-    "Pre-War Money (250)",
-    "Super Glue",
-    "Toy Mini-Nuke"
-]
+    "Nuka Cola",
+    "Pre-War Money (25)"
+    ]
 
 AMMO = [
-    "10mm Rounds (15)",
-    "Fusion Cells (28)"
-]
+    "Water Pistol Magazine"
+    ]
 
 QUESTS = [
-    "Cosplacon",
-    "Cosplay Royale",
-    "Drink n Draw",
-    "Queens of Cosplay"
+    "Party!",
+    "Drink Nuka Cola",
+    "Open Gifts",
+    "Thank Everyone For Coming"
 ]
 
 SKILLS = [
-    "Action Boy",
-    "Animal Friend",
-    "Awareness",
-    "Gunslinger"
-    "Hacker",
-    "Mysterious Stranger",
-    "Rifleman",
-    "Science"   
+    "Water Guns      (20)",
+    "Athletics       (05)",
+    "Hacking         (10)",
+    "Lockpick        (10)"
+    "Repair          (05)",
+    "Science         (15)",
+    "Survival        (10)",
+    "Speach          (10)"   
 ]
 
 PERKS = [
